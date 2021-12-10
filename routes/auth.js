@@ -31,7 +31,6 @@ return res.json({
 
 })
 
-
 router.post('/signup', async (req, res) => {
     const { body } = req;
     let user = await sequelize.models.users.findOne({
